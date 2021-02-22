@@ -17,7 +17,10 @@
           <e p="LegKicker.cs" t="Include" />
           <e p="LegKicker_PopAnim.cs" t="Include" />
           <e p="LogoPop.cs" t="Include" />
+          <e p="NewScenCleanup.cs" t="Include" />
           <e p="ResetButton.cs" t="Include" />
+          <e p="SceneManagerButton.cs" t="Include" />
+          <e p="Skyboxeerr.cs" t="Include" />
           <e p="TouchInputTest.cs" t="Include" />
         </e>
       </e>
