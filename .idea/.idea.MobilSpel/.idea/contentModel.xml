@@ -5,28 +5,80 @@
     <e p="C:\Users\Oskar\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_MobilSpel.2007290679.00" t="ExcludeRecursive" />
     <e p="C:\Users\Oskar\AppData\Roaming\JetBrains\Rider2020.2\scratches" t="IncludeRecursive" />
     <e p="G:\Unity_projects\MobilSpel" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="PathCreator" t="Include">
+          <e p="Core" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Helper" t="Include">
+                <e p="MouseUtility.cs" t="Include" />
+                <e p="PathHandle.cs" t="Include" />
+                <e p="ScreenSpacePolyLine.cs" t="Include" />
+              </e>
+              <e p="PathCreatorEditor.asmdef" t="Include" />
+              <e p="PathEditor.cs" t="Include" />
+            </e>
+            <e p="Runtime" t="Include">
+              <e p="Objects" t="Include">
+                <e p="BezierPath.cs" t="Include" />
+                <e p="EndOfPathInstruction.cs" t="Include" />
+                <e p="GlobalDisplaySettings.cs" t="Include" />
+                <e p="MinMax3D.cs" t="Include" />
+                <e p="PathCreator.cs" t="Include" />
+                <e p="PathCreatorData.cs" t="Include" />
+                <e p="PathSpace.cs" t="Include" />
+                <e p="VertexPath.cs" t="Include" />
+              </e>
+              <e p="PathCreator.asmdef" t="Include" />
+              <e p="Utility" t="Include">
+                <e p="CubicBezierUtility.cs" t="Include" />
+                <e p="MathUtility.cs" t="Include" />
+                <e p="VertexPathUtility.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Examples" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="PathSceneToolEditor.cs" t="Include" />
+              </e>
+              <e p="GeneratePathExample.cs" t="Include" />
+              <e p="PathFollower.cs" t="Include" />
+              <e p="PathPlacer.cs" t="Include" />
+              <e p="PathSceneTool.cs" t="Include" />
+              <e p="PathSpawner.cs" t="Include" />
+              <e p="RoadMeshCreator.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="PlanePosition.cs" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="BallOutsideTrigger.cs" t="Include" />
-          <e p="CameraMovement.cs" t="Include" />
-          <e p="Crowd_Animation.cs" t="Include" />
-          <e p="Crowd_Cheer_Multiplier.cs" t="Include" />
-          <e p="Crowd_Movement.cs" t="Include" />
-          <e p="LegKicker.cs" t="Include" />
-          <e p="LegKicker_PopAnim.cs" t="Include" />
-          <e p="LogoPop.cs" t="Include" />
-          <e p="NewScenCleanup.cs" t="Include" />
-          <e p="ResetButton.cs" t="Include" />
-          <e p="SceneManagerButton.cs" t="Include" />
-          <e p="Skyboxeerr.cs" t="Include" />
-          <e p="TouchInputTest.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
+          <e p="KonvojFollower.cs" t="Include" />
+          <e p="old" t="Include">
+            <e p="BallOutsideTrigger.cs" t="Include" />
+            <e p="CameraMovement.cs" t="Include" />
+            <e p="Crowd_Animation.cs" t="Include" />
+            <e p="Crowd_Cheer_Multiplier.cs" t="Include" />
+            <e p="Crowd_Movement.cs" t="Include" />
+            <e p="LegKicker.cs" t="Include" />
+            <e p="LegKicker_PopAnim.cs" t="Include" />
+            <e p="LogoPop.cs" t="Include" />
+            <e p="NewScenCleanup.cs" t="Include" />
+            <e p="ResetButton.cs" t="Include" />
+            <e p="SceneManagerButton.cs" t="Include" />
+            <e p="Skyboxeerr.cs" t="Include" />
+            <e p="TouchInputTest.cs" t="Include" />
+          </e>
+          <e p="Targeting.cs" t="Include" />
         </e>
       </e>
       <e p="MobilSpel.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="PathCreator.csproj" t="IncludeRecursive" />
+      <e p="PathCreatorEditor.csproj" t="IncludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
     </e>
   </component>
