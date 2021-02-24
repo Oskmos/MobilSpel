@@ -8,6 +8,9 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="FOVEditor.cs" t="Include" />
+        </e>
         <e p="PathCreator" t="Include">
           <e p="Core" t="Include">
             <e p="Editor" t="Include">
@@ -55,7 +58,9 @@
         <e p="PlanePosition.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Enemy.cs" t="Include" />
+          <e p="FieldOfView.cs" t="Include" />
           <e p="KonvojFollower.cs" t="Include" />
+          <e p="NewBehaviourScript.cs" t="Include" />
           <e p="old" t="Include">
             <e p="BallOutsideTrigger.cs" t="Include" />
             <e p="CameraMovement.cs" t="Include" />
@@ -71,7 +76,13 @@
             <e p="Skyboxeerr.cs" t="Include" />
             <e p="TouchInputTest.cs" t="Include" />
           </e>
+          <e p="PoolManager.cs" t="Include" />
+          <e p="PoolObject.cs" t="Include" />
           <e p="Targeting.cs" t="Include" />
+          <e p="test" t="Include">
+            <e p="testmanager.cs" t="Include" />
+            <e p="testobject.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="MobilSpel.sln" t="IncludeFlat" />
