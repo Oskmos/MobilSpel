@@ -32,13 +32,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PoolObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KonvojFollower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FieldOfView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PoolManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/MuzzleSmoke_01.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Projectile_9mm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/test/testobject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/FOVEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Impact_9mm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Muzzleflash_01.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,8 +68,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FieldOfView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test/testobject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PoolManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/test/testmanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PoolObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ProjectileManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/testmanager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/PoolObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/ProjectileManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/ProjectileObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Projectile9mm.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/PoolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/TracerGlow.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Projectile_9mm.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Impact_9mm.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Muzzleflash_01.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/MuzzleSmoke_01.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon_9mm.cs" />
       </list>
     </option>
   </component>
@@ -119,6 +134,7 @@
       <workItem from="1613468039463" duration="1205000" />
       <workItem from="1614081998245" duration="13193000" />
       <workItem from="1614153025041" duration="11483000" />
+      <workItem from="1614257594452" duration="12831000" />
     </task>
     <servers />
   </component>

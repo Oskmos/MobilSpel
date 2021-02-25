@@ -16,4 +16,9 @@ public class PoolObject : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    public virtual void OnProjectilImpact()
+    {
+    
+    }
 }

@@ -67,19 +67,24 @@ public class PoolManager : MonoBehaviour
     {
         int poolKey = prefab.GetInstanceID();
 
-        GameObject poolHolder = new GameObject(prefab.name + " pool");
-        poolHolder.transform.parent = transform;
         
-        if (!poolDictionary.ContainsKey(poolKey))
-        {
-            poolDictionary.Add(poolKey, new Queue<ObjectInstance>());
-            for (int i = 0; i < poolSize; i++)
+        GameObject poolHolder = new GameObject(prefab.name + " pool");
+        
+        poolHolder.transform.parent = transform;
+
+
+            if (!poolDictionary.ContainsKey(poolKey))
             {
-                ObjectInstance newObject = new ObjectInstance(Instantiate(prefab) as GameObject);
-                poolDictionary[poolKey].Enqueue(newObject);
-                newObject.SetParent(poolHolder.transform);
+                poolDictionary.Add(poolKey, new Queue<ObjectInstance>());
+                for (int i = 0; i < poolSize; i++)
+                {
+                    ObjectInstance newObject = new ObjectInstance(Instantiate(prefab) as GameObject);
+                    poolDictionary[poolKey].Enqueue(newObject);
+                    newObject.SetParent(poolHolder.transform);
+                }
             }
-        }
+
+            if (poolHolder.transform.childCount <= 0) Destroy(poolHolder);
     }
 
 

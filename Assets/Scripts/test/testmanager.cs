@@ -19,5 +19,7 @@ public class testmanager : MonoBehaviour
         {
             PoolManager.instance.ReuseObject(prefab,Vector3.zero, Quaternion.identity);
         }
+        
+        
     }
 }
