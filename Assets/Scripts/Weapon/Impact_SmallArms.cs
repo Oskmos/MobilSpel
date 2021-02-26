@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Impact_9mm : PoolObject
+public class Impact_SmallArms : PoolObject
 {
     private float Timer;
     // Start is called before the first frame update

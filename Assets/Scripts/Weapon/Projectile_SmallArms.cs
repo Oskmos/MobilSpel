@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile_9mm : PoolObject
+public class Projectile_SmallArms : PoolObject
 {
-    private Weapon_9mm _weapon9Mm;
+    private Weapon_SmallArms _weapon9Mm;
     private float Velocity = 200f;
     
 
@@ -21,7 +21,7 @@ public class Projectile_9mm : PoolObject
         
         if (_weapon9Mm == null)
         {
-            _weapon9Mm = FindObjectOfType<Weapon_9mm>();
+            _weapon9Mm = FindObjectOfType<Weapon_SmallArms>();
         }
     }
 
@@ -65,6 +65,8 @@ public class Projectile_9mm : PoolObject
             _weapon9Mm.BulletImpact(hit.point);
             scale = startScale;
             Destroy();
+
+            //hit.collider.enabled = false;
             //IMPACT
         }
     }

@@ -6,14 +6,15 @@ using UnityEngine;
 public class KonvojFollower : MonoBehaviour
 {
 
-    public PathCreator pathCreator;
+    private PathCreator pathCreator;
     public float speed = 5;
     private float distanceTravelled;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pathCreator = FindObjectOfType<PathCreator>();
     }
 
     // Update is called once per frame
@@ -22,5 +23,7 @@ public class KonvojFollower : MonoBehaviour
         distanceTravelled += speed * Time.deltaTime;
         transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled);
         transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled);
+
+        
     }
 }

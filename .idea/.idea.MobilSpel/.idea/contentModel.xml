@@ -59,6 +59,8 @@
         <e p="Scripts" t="Include">
           <e p="Enemy.cs" t="Include" />
           <e p="FieldOfView.cs" t="Include" />
+          <e p="FieldOfView_Placement.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="Health.cs" t="Include" />
           <e p="KonvojFollower.cs" t="Include" />
           <e p="ObjectPooling" t="Include">
@@ -80,17 +82,27 @@
             <e p="Skyboxeerr.cs" t="Include" />
             <e p="TouchInputTest.cs" t="Include" />
           </e>
+          <e p="OpenFire.cs" t="Include" />
+          <e p="SoldierPlacer.cs" t="Include" />
           <e p="Targeting.cs" t="Include" />
           <e p="test" t="Include">
             <e p="testmanager.cs" t="Include" />
             <e p="testobject.cs" t="Include" />
           </e>
+          <e p="Vehicles" t="Include">
+            <e p="APC" t="Include">
+              <e p="VehicleVibration.cs" t="Include" />
+              <e p="WheelsSpin.cs" t="Include" />
+            </e>
+            <e p="EnemyFieldOfView.cs" t="Include" />
+          </e>
           <e p="Weapon" t="Include">
-            <e p="Impact_9mm.cs" t="Include" />
+            <e p="Impact_SmallArms.cs" t="Include" />
             <e p="Muzzleflash_01.cs" t="Include" />
             <e p="MuzzleSmoke_01.cs" t="Include" />
-            <e p="Projectile_9mm.cs" t="Include" />
-            <e p="Weapon_9mm.cs" t="Include" />
+            <e p="Projectile_SmallArms.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
+            <e p="Weapon_SmallArms.cs" t="Include" />
           </e>
         </e>
         <e p="Shaders" t="Include">

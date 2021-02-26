@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon_9mm : MonoBehaviour
+public class Weapon_SmallArms : Weapon
 {
     public GameObject projectile;
     
     public GameObject impact;
     public GameObject muzzleflash;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,18 +21,8 @@ public class Weapon_9mm : MonoBehaviour
        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Fire();
-        }
-    }
 
-    public void Fire()
+    public override void Fire()
     {
         Quaternion rotation = this.transform.rotation;
         PoolManager.instance.ReuseObject(projectile,this.transform.position, rotation);

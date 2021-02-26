@@ -3,125 +3,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FieldOfView : MonoBehaviour
+public class FieldOfView_Placement : MonoBehaviour
 {
-
+   public bool placed = false;
    public float viewRadius;
-   [Range(0,360)]
-   public float viewAngle;
-
-   private Quaternion defaultRotation;
-
-   public LayerMask targetMask;
-   public LayerMask obstacleMask;
    
-   public List<Transform> visibleTargets = new List<Transform>();
+   private float viewAngle= 360;
+   
+   
+   public LayerMask obstacleMask;
 
-
-   public GameObject soldier;
-   public OpenFire openFire;
+   private SoldierPlacer _soldierPlacer;
 
    public float meshResolution;
    public MeshFilter viewMeshFilter;
    private Mesh viewMesh;
 
    public int edgeResolveIterations;
-
    public float edgeDistanceThreshold;
    
    private void Start()
    {
-      defaultRotation = this.transform.rotation;
-      StartCoroutine("FindTargetsWithelay", .2f);
-      
       viewMesh = new Mesh();
       viewMesh.name = "View Mesh";
       viewMeshFilter.mesh = viewMesh;
+
+
+      _soldierPlacer = FindObjectOfType<SoldierPlacer>();
+      placed = false;
       
       
-      
-   }
-
-   private void Update()
-   {
-      RotateSoldier();
-   }
-
-   private void RotateSoldier()
-   {
-  
-      if (visibleTargets.Count > 0)
-      {
-         int enemyToPrio = 0;
-         for (int i = 0; i < visibleTargets.Count; i++)
-         {
-            if (visibleTargets[i].name == "Enemy_TANK")
-            {
-               enemyToPrio = i;
-            }
-            else if (visibleTargets[i].name == "Enemy_APC")
-            {
-               enemyToPrio = i;
-            }
-            else if (visibleTargets[i].name == "Enemy_INFANTRY")
-            {
-               enemyToPrio = i;
-            }
-         }
-         
-         Vector3 direction = visibleTargets[enemyToPrio].transform.position - transform.position;
-         direction.y = 0;
-         Quaternion rotation = Quaternion.LookRotation(direction,Vector3.up);
-         soldier.transform.rotation = Quaternion.Lerp(soldier.transform.rotation,rotation, 0.1f);;
-
-
-         openFire.enabled = true;
-      }
-      else
-      {
-         soldier.transform.rotation = Quaternion.Lerp(soldier.transform.rotation,defaultRotation, 0.1f);
-         
-         openFire.enabled = false;
-      }
-   }
-
-   private void LateUpdate()
-   {
-     // DrawFieldOfView();
-      
-      
-   }
-
-   IEnumerator FindTargetsWithelay(float delay)
-   {
-      while (true)
-      {
-         yield return new WaitForSeconds(delay);
-         FindVisibleTargets();
-      }
    }
    
-   void FindVisibleTargets()
+   private void LateUpdate()
    {
-      visibleTargets.Clear();
-      Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask);
+      DrawFieldOfView();
 
-      for (int i = 0; i < targetsInViewRadius.Length; i++)
-      {
-         Transform target = targetsInViewRadius[i].transform;
-         Vector3 dirToTarget = (target.position - transform.position).normalized;
-         if (Vector3.Angle(transform.forward, dirToTarget) < viewAngle / 2)
-         {
-            float distanceToTarget = Vector3.Distance(transform.position, target.position);
-
-            if (!Physics.Raycast(transform.position, dirToTarget, distanceToTarget, obstacleMask))
-            {
-               visibleTargets.Add(target);
-            }
-         }
-      }
+      if (_soldierPlacer.placed) ReduceRadius();
    }
-
+   
+   void ReduceRadius()
+   {
+      viewAngle = Mathf.Lerp(viewAngle, 90, 0.02f);
+   }
+   
    void DrawFieldOfView()
    {
       int stepCount = Mathf.RoundToInt(viewAngle * meshResolution);
