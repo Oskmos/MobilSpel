@@ -10,7 +10,9 @@ public class VehicleVibration : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+        var HealthInstance = transform.parent.GetComponentInChildren<Health>();
+        HealthInstance.onDeath += Death;
+
     }
 
     // Update is called once per frame
@@ -30,5 +32,13 @@ public class VehicleVibration : MonoBehaviour
         
         
         //positionOffset = Vector3.zero;
+    }
+
+    void Death()
+    {
+        positionOffset = Vector3.zero;
+        positionOffset = transform.position;
+        transform.position = positionOffset;
+        this.enabled = false;
     }
 }

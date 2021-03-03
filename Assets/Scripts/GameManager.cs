@@ -24,4 +24,9 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    public void SetStatePlay()
+    {
+        gameState = GameState.Play;
+    }
 }

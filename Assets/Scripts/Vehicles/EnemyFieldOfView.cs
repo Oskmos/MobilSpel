@@ -18,7 +18,7 @@ public class EnemyFieldOfView : MonoBehaviour
 
 
    public GameObject turret;
-   //public OpenFire openFire;
+   public OpenFire openFire;
 
 
 
@@ -26,9 +26,11 @@ public class EnemyFieldOfView : MonoBehaviour
    
    private void Start()
    {
-      defaultRotation = this.transform.rotation;
+      defaultRotation = Quaternion.Euler(0,180,0);
       StartCoroutine("FindTargetsWithDelay", .8f);
 
+      var HealthInstance = GetComponentInParent<Health>();
+      HealthInstance.onDeath += Death;
       
    }
 
@@ -49,13 +51,13 @@ public class EnemyFieldOfView : MonoBehaviour
          turret.transform.rotation = Quaternion.RotateTowards(turret.transform.rotation,rotation, 0.3f);
          
 
-        //openFire.enabled = true;
+        openFire.enabled = true;
       }
       else
       {
-         //turret.transform.rotation = Quaternion.Lerp(turret.transform.rotation,defaultRotation, 0.1f);
-         
-         //openFire.enabled = false;
+         turret.transform.rotation = Quaternion.RotateTowards(turret.transform.rotation,defaultRotation, 0.1f);
+            
+         openFire.enabled = false;
       }
    }
 
@@ -89,6 +91,12 @@ public class EnemyFieldOfView : MonoBehaviour
             }
          }
       }
+   }
+
+   void Death()
+   {
+      openFire.enabled = false;
+      this.enabled = false;
    }
 
 

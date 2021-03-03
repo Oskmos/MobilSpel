@@ -57,37 +57,28 @@
         </e>
         <e p="PlanePosition.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="CameraPathFollower.cs" t="Include" />
+          <e p="DelegateManager.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
-          <e p="FieldOfView.cs" t="Include" />
           <e p="FieldOfView_Placement.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Health.cs" t="Include" />
-          <e p="KonvojFollower.cs" t="Include" />
+          <e p="Inventory.cs" t="Include" />
+          <e p="KonvojSpawner.cs" t="Include" />
           <e p="ObjectPooling" t="Include">
             <e p="PoolManager.cs" t="Include" />
             <e p="PoolObject.cs" t="Include" />
           </e>
-          <e p="old" t="Include">
-            <e p="BallOutsideTrigger.cs" t="Include" />
-            <e p="CameraMovement.cs" t="Include" />
-            <e p="Crowd_Animation.cs" t="Include" />
-            <e p="Crowd_Cheer_Multiplier.cs" t="Include" />
-            <e p="Crowd_Movement.cs" t="Include" />
-            <e p="LegKicker.cs" t="Include" />
-            <e p="LegKicker_PopAnim.cs" t="Include" />
-            <e p="LogoPop.cs" t="Include" />
-            <e p="NewScenCleanup.cs" t="Include" />
-            <e p="ResetButton.cs" t="Include" />
-            <e p="SceneManagerButton.cs" t="Include" />
-            <e p="Skyboxeerr.cs" t="Include" />
-            <e p="TouchInputTest.cs" t="Include" />
-          </e>
-          <e p="OpenFire.cs" t="Include" />
-          <e p="SoldierPlacer.cs" t="Include" />
-          <e p="Targeting.cs" t="Include" />
-          <e p="test" t="Include">
-            <e p="testmanager.cs" t="Include" />
-            <e p="testobject.cs" t="Include" />
+          <e p="Soldier" t="Include">
+            <e p="FieldOfView.cs" t="Include" />
+            <e p="Soldier.cs" t="Include" />
+            <e p="SoldierPlacer.cs" t="Include" />
+            <e p="Weapon_MG" t="Include">
+              <e p="Weapon_MG.cs" t="Include" />
+            </e>
+            <e p="Weapon_SmallArms" t="Include">
+              <e p="Weapon_SmallArms.cs" t="Include" />
+            </e>
           </e>
           <e p="Vehicles" t="Include">
             <e p="APC" t="Include">
@@ -95,14 +86,16 @@
               <e p="WheelsSpin.cs" t="Include" />
             </e>
             <e p="EnemyFieldOfView.cs" t="Include" />
+            <e p="KonvojFollower.cs" t="Include" />
           </e>
-          <e p="Weapon" t="Include">
-            <e p="Impact_SmallArms.cs" t="Include" />
-            <e p="Muzzleflash_01.cs" t="Include" />
-            <e p="MuzzleSmoke_01.cs" t="Include" />
-            <e p="Projectile_SmallArms.cs" t="Include" />
+          <e p="Weapons" t="Include">
+            <e p="OpenFire.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
-            <e p="Weapon_SmallArms.cs" t="Include" />
+            <e p="Weapon_Common" t="Include">
+              <e p="Impact_Small.cs" t="Include" />
+              <e p="Muzzleflash_01.cs" t="Include" />
+              <e p="Projectile_Small.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Shaders" t="Include">

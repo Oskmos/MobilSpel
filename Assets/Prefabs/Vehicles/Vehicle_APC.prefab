@@ -109,7 +109,8 @@ GameObject:
   - component: {fileID: 2610639822007900124}
   - component: {fileID: 7041156936463349522}
   - component: {fileID: 6745327230996874272}
-  m_Layer: 0
+  - component: {fileID: 5442426855830838077}
+  m_Layer: 6
   m_Name: Enemy_APC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,8 +204,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.98736554, y: 0.7082771, z: 2.567924}
-  m_Center: {x: 0, y: 0.009995416, z: 0}
+  m_Size: {x: 0.98736554, y: 0.68, z: 2.567924}
+  m_Center: {x: 0, y: -0.05, z: 0}
 --- !u!114 &6745327230996874272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +218,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050b4f888409b914e844922d3fdad48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5442426855830838077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955451725363911111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b129d0d71d4fb24d9ffd4a7b2da1643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 10
 --- !u!1 &7504158081160304946
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +433,8 @@ GameObject:
   - component: {fileID: 5873570919391658947}
   - component: {fileID: 5494806234374445656}
   - component: {fileID: 4326936023408813759}
+  - component: {fileID: 6455409058602526991}
+  - component: {fileID: 693073370515720019}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -501,8 +517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a60eb2d66cb30a489a0c327d667545e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 20
-  viewAngle: 360
+  viewRadius: 30
+  viewAngle: 40
   targetMask:
     serializedVersion: 2
     m_Bits: 256
@@ -511,6 +527,37 @@ MonoBehaviour:
     m_Bits: 128
   visibleTargets: []
   turret: {fileID: 8935623719608022237}
+  openFire: {fileID: 6455409058602526991}
+--- !u!114 &6455409058602526991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935623719608022237}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cecb9c0aa9208124399d3fab2e522396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 693073370515720019}
+--- !u!114 &693073370515720019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935623719608022237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c22af50268634e44a8ecfd986059d897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoundsPerMinute: 400
+  Damage: 10
+  projectile: {fileID: 3363971953477370031, guid: 79545ec5aa7b30e4097c29158e354c5f, type: 3}
+  impact: {fileID: 6158747012222180349, guid: 22d64b59c1ff600438bb4f7cfdde054f, type: 3}
+  muzzleflash: {fileID: 6158747012222180349, guid: e3065ff173149df4e8c06048a634d802, type: 3}
 --- !u!1 &9075944808270392266
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,8 +606,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce339a3f6d9728408a86da41077513d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathCreator: {fileID: 0}
+  queuePosition: 0
   speed: 5
+  wreckMaterial: {fileID: 2100000, guid: 1c3aa13f4f6eb064ea002144647ac3c2, type: 2}
 --- !u!1 &9151906479792546314
 GameObject:
   m_ObjectHideFlags: 0

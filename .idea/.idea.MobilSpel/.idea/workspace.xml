@@ -32,38 +32,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KonvojFollower.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FieldOfView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/MuzzleSmoke_01.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OpenFire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KonvojSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vehicles/KonvojFollower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DelegateManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon_Common/Impact_Small.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Soldier/Soldier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FieldOfView_Placement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vehicles/EnemyFieldOfView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoldierPlacer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Projectile_SmallArms.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/test/testobject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Soldier/Weapon_MG/Weapon_MG.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/FOVEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Impact_SmallArms.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/Muzzleflash_01.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vehicles/EnemyFieldOfView.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/TouchInputTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crowd_Cheer_Multiplier_2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crowd_Cheer_Multiplier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crowd_Animation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LogoPop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crowd_Movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TouchInputTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LegKicker_PopAnim.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LegKicker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ResetButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallOutsideTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NewScenCleanup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagerButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Skyboxeerr.cs" />
@@ -91,15 +75,30 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon_SmallArms.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Impact_SmallArms.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicles/WheelsSpin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicles/APC/WheelsSpin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicles/APC/VehicleVibration.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Projectile_SmallArms.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicles/EnemyFieldOfView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KonvojFollower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FieldOfView_Placement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FieldOfView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SoldierPlacer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/Weapon_Common/Impact_Small.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/Weapon_MG/Weapon_SmallArms.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/SoldierType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/Weapon_Common/Projectile_Small.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicles/APC/WheelsSpin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicles/APC/VehicleVibration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicles/EnemyFieldOfView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/FieldOfView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/Soldier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/OpenFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/KonvojSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicles/KonvojFollower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/SoldierPlacer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraPathFollower.cs" />
       </list>
     </option>
   </component>
@@ -155,7 +154,10 @@
       <workItem from="1614257594452" duration="12831000" />
       <workItem from="1614327501333" duration="5814000" />
       <workItem from="1614342333330" duration="2103000" />
-      <workItem from="1614356413733" duration="14380000" />
+      <workItem from="1614356413733" duration="15069000" />
+      <workItem from="1614591614433" duration="13070000" />
+      <workItem from="1614679313543" duration="9971000" />
+      <workItem from="1614764832302" duration="8367000" />
     </task>
     <servers />
   </component>
@@ -244,13 +246,13 @@
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
     <state width="1853" height="517" key="GridCell.Tab.3.right/0.0.3840.2120@0.0.3840.2120" timestamp="1614116243126" />
-    <state x="2439" y="889" key="RiderGenerateDialog" timestamp="1614174112379">
+    <state x="2439" y="889" key="RiderGenerateDialog" timestamp="1614599425064">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state x="2439" y="889" key="RiderGenerateDialog/0.0.3840.2120@0.0.3840.2120" timestamp="1614174112379" />
-    <state x="2391" y="826" width="672" height="678" key="search.everywhere.popup" timestamp="1614164365952">
+    <state x="2439" y="889" key="RiderGenerateDialog/0.0.3840.2120@0.0.3840.2120" timestamp="1614599425064" />
+    <state x="2391" y="826" width="672" height="678" key="search.everywhere.popup" timestamp="1614597655187">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state x="2391" y="826" width="672" height="678" key="search.everywhere.popup/0.0.3840.2120@0.0.3840.2120" timestamp="1614164365952" />
+    <state x="2391" y="826" width="672" height="678" key="search.everywhere.popup/0.0.3840.2120@0.0.3840.2120" timestamp="1614597655187" />
   </component>
 </project>
